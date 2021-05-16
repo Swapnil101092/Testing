@@ -8,11 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-		features = {"features"},
-		glue = {"steps"},
-		plugin = {"pretty","html:Report1"},
-		dryRun = false,
-		strict = true,
+		features = {"features"},glue = {"steps"},plugin = {"pretty","json:Report1"},dryRun = false,strict = true,
 		monochrome = true
 	//	tags = {"@P1"}
 		//name = {"Logo"}
